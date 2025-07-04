@@ -13,7 +13,7 @@ let dealerCheck;
 document.getElementById('start').onclick = function() {
 	num = Number(document.getElementById('People').value);
 	if (isNaN(num) || num < 1) {
-		alert("Please enter the number of people.");
+		alert("Please enter the number of players.");
 		return;
 	}
 	dealerCheck = document.getElementById(`dealerCheck`);

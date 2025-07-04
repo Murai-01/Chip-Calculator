@@ -157,8 +157,7 @@ document.getElementById('usageButton').onclick = function() {
 	usageText = !usageText;
 
 	if (usageText) {
-		let html = `<h2>How to Use</h2>
-  <h3>Basic Steps</h3>
+		let html = `<h3>Basic Steps</h3>
   <ul>
     <li>Enter the number of players.</li>
     <li>If you are playing with a dealer, check the "Dealer Mode" box and click "Start".</li>

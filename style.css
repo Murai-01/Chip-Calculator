@@ -146,7 +146,6 @@ input[type="checkbox"] {
     }
 }
 
-/* Usage（使い方）説明欄を美しくコンパクトに */
 #usageArea {
     max-width: 440px;
     margin: 12px auto 0 auto;
@@ -159,14 +158,6 @@ input[type="checkbox"] {
     transition: box-shadow 0.15s, background 0.18s;
     word-break: break-word;
     line-height: 1.45;
-}
-#usageArea h2 {
-    margin: 0 0 13px 0;
-    font-size: 1.25em;
-    color: #fff;
-    letter-spacing: 1.1px;
-    font-weight: 700;
-    text-align: center;
 }
 #usageArea h3 {
     margin: 0 0 7px 0;

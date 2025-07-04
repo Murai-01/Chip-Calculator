@@ -78,10 +78,6 @@ document.getElementById('start').onclick = function() {
 			}
 		};
 
-
-
-
-
 	} else {
 		let html = "<table border='1'>";
 		html += "<tr><th>No.</th><th>Winner</th><th>Amount Lost</th><th>Total</th></tr>";
@@ -156,6 +152,46 @@ document.getElementById('start').onclick = function() {
 	};
 };
 
+let usageText = false;
+document.getElementById('usageButton').onclick = function() {
+	usageText = !usageText;
+
+	if (usageText) {
+		let html = `<h2>How to Use</h2>
+  <h3>Basic Steps</h3>
+  <ul>
+    <li>Enter the number of players.</li>
+    <li>If you are playing with a dealer, check the "Dealer Mode" box and click "Start".</li>
+  </ul>
+  <hr>
+  <h3>Dealer Mode (with a dealer)</h3>
+  <ul>
+    <li>In the "Dealer" column, select one player to be the dealer for the round.</li>
+    <li>Each non-dealer player enters their chip gain or loss for the round in the "Amount Won" column.</li>
+    <li>Enter a positive number if you beat the dealer, or a negative number if you lost to the dealer.</li>
+    <li>The dealer does not need to enter anything.</li>
+  </ul>
+  <hr>
+  <h3>Non-Dealer Mode (no dealer)</h3>
+  <ul>
+    <li>In the "Winner" column, select all winners for the round (multiple selections allowed).</li>
+    <li>In the "Amount Won" column, each winner enters the number of chips they receive from each losing player.</li>
+    <li>If a loser's amount lost is different from the winner's amount (for example, due to a special rule), enter their specific amount in the "Amount Lost" column. Otherwise, leave it blank.</li>
+    <li>If there is no change for a player, enter "0".</li>
+  </ul>
+  <hr>
+  <h3>Notes</h3>
+  <ul>
+    <li>You must select at least one dealer or one winner for each round.</li>
+    <li>Double-check all inputs before clicking the "Calculation" button.</li>
+    <li>Each player's total is shown in the "Total" column.</li>
+    <li>History is not saved, so record results as needed.</li>
+  </ul>`;
+		document.getElementById('usageArea').innerHTML = html;
+	} else {
+		document.getElementById('usageArea').innerHTML = "";
+	}
+};
 
 
 

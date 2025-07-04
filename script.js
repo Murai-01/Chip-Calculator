@@ -84,7 +84,7 @@ document.getElementById('start').onclick = function() {
 
 	} else {
 		let html = "<table border='1'>";
-		html += "<tr><th>No.</th><th>Win</th><th>Amount Lost</th><th>Total</th></tr>";
+		html += "<tr><th>No.</th><th>Winer</th><th>Amount Lost</th><th>Total</th></tr>";
 
 		for (let i = 1; i <= num; i++) {
 			html += `<tr>
